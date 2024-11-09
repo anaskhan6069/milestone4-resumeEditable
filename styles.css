@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --primary-color: #163853;
+    --secondary-color: #191919;
+    --paragraph-color: #545454;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(207, 207, 207);
+}
+
+.main-heading{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin: 20px;
+    text-align: center;
+}
+
+.main-container{
+    background-color: white;
+    border-radius: 10px;
+    
+    position: relative;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+form{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+form .col1{
+    flex: 1;
+}
+form .col2{
+    flex: 1;
+}
+form h2{
+    color: var(--primary-color);
+    font-size: 26px;
+}
+form .personal-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 15px 40px;
+}
+form input, textarea{
+    padding: 6px 10px;
+    border-radius: 6px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+form label{
+    margin-top: 12px;
+}
+
+form .skills-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 15px 40px;
+}
+
+form .education-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 15px 40px;
+}
+form .education-section2, form .experience-section2{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+form .add-education, .delete-education, .add-experience, .delete-experience{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 2px;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+}
+form .delete-education, form .delete-experience{
+    background-color: red;
+}
+
+form .experience-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 15px 40px;
+}
+
+.main-container .btn{
+    text-align: center;
+    margin: 20px 0;
+    /* position: absolute;
+    left: 54px;
+    bottom: 12px; */
+}
+.main-container .btn button{
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.main-container button:hover{    
+    background-color: #002461;
+    cursor: pointer;
+}
+form .delete-education:hover, form .delete-experience:hover{
+    background-color: rgb(204, 0, 0);
+}
+.main-container button:active{    
+    transform: scale(0.9);
+}
+
+
+/* ============================================================
+                            RESUME
+============================================================ */
+
+.resume{
+    display: flex;
+    background-color: white;
+    margin: 50px 0 0 0;
+    /* padding: 15px; */
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    width: 850px;
+}
+.resume .col1{
+    background-color: var(--primary-color);
+    color: white;
+    width: 295px;
+    padding: 30px 30px 20px 30px;
+    gap: 20px;  
+    /* border-radius: 10px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break:break-word;
+}
+.resume .col1 .profile{
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    margin-bottom: 10px;
+    /* overflow: hidden; */
+}
+.resume .col1 .profile img{
+    width: 100%;
+    height: 100%;
+    /* transform: scale(1.7); */
+}
+.resume .col1 .personal-info{
+    margin: 20px 0;
+    /* margin-top: 40px; */
+    /* text-align: center; */
+    line-height: 36px;    
+    align-self: flex-start;
+    width: 100%;
+}
+.resume .col1 .personal-info h2, .skills h2{
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid white;
+    letter-spacing: 2px;
+}
+.resume .col1 .personal-info p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 24px;
+    /* justify-content: center; */
+}
+.resume .col1 .personal-info .icon{
+    margin-right: 15px;
+    border-radius: 50%;
+    /* font-size: 15px; */
+}
+
+.resume .col1 .skills{
+    align-self: flex-start;
+    width: 100%;
+}
+.resume .col1 .skills ul{
+    margin-left: 20px;
+    line-height: 34px;
+}
+
+
+/* =============  COL2: name, about, education, experience ======== */
+
+.resume .col2{
+    /* background-color: aqua; */
+    width: 554px;
+    padding: 30px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break:break-word;
+
+}
+.col2 .name{
+    margin: 50px 30px 55px 30px;
+    font-size: 22px;
+    color: #163853;
+    /* color: #545454; */
+    line-height: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+.col2 .name::before{
+    content: "";
+    width: 90px;
+    height: 4px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+.col2 .name p{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+.col2 .name p i{
+    margin-right: 10px;
+    color: var(--paragraph-color);
+}
+
+
+.col2 .about{
+    width: 100%;
+
+
+}
+.col2 .about p{
+    text-align: justify;
+    word-break: break-all;
+}
+.col2 .about h2, .education h2, .experience h2{
+    color: var(--primary-color);
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid var(--primary-color);
+    letter-spacing: 2px;
+}
+
+
+.col2 .education, .experience{
+    margin-top: 15px;
+    line-height: 30px;
+}
+.col2 .education .college-title, .experience .experience-title{
+    font-weight: 700;
+}
+
+.col2 .more-education, .more-experience{
+    margin-top: 10px;
+}
+
+
+/* ===========  EDIT BUTTON  ============ */
+
+.edit-button-div{
+    margin: 20px 0;
+}
+
+.edit-btn{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: white;
+    background-color: rgb(235, 113, 0);
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    letter-spacing: 2px;
+    transition: 0.2s ease;
+}
+.edit-button-div .edit-btn:hover{
+    cursor: pointer;
+    background-color: rgb(202, 98, 0);
+}
+.edit-button-div .edit-btn:active{
+    transform: scale(0.9);
+}
+
+.resume .editingOn{
+    border-style:ridge;
+}
+
+.edit-btn.edit-btn-clicked{
+    background-color: rgb(0, 168, 0);
+}
+.edit-btn.edit-btn-clicked:hover{
+    background-color: green;
+}
+
+/* .edit-button-div .edit-btn:focus{
+} */
+
+
+/* @media(max-width: 500px){
+    .resume{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-heading{
+        color: var(--primary-color);
+        text-transform: uppercase;
+        margin: 10px;
+        font-size: 26px;
+    }
+} */
+
+
+

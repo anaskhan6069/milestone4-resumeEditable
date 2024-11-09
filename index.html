@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Your Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="main-heading">Resume Generator by Anas Khan</h1>
+    <div class="main-container">
+        <form action="">
+
+            <!-- =======================  PERSONAL SECTION  =========================== -->
+            <div class="col1">
+                <div class="personal-section">
+                    <h2>Personal Information</h2>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" required>
+
+                    <label for="profession">Your profession</label>
+                    <input type="text" id="profession" placeholder="ex: front-end developer" required>
+
+                    <label for="contact">Contact</label>
+                    <input type="number" id="contact" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" required>
+
+                    <Label for="about">Write something about you</Label>
+                    <textarea name="about" id="about"></textarea>
+
+
+                </div>
+                <!-- =======================  SKILLS SECTION  =========================== -->
+
+                <div class="skills-section">
+                    <h2>Skills</h2>
+                    <label for="full-name">Write skills Comma Saperated: </label>
+                    <input type="text" id="skills" required>
+                </div>
+            </div>
+
+            <div class="col2">
+
+
+                <!-- =======================  EDUCATION SECTION  =========================== -->
+
+                <div class="education-section" id="education-section">
+                    
+                    <h2>Education</h2>
+                    <label for="college">College/University</label>
+                    <input type="text" id="college" required>
+
+                    <label for="college-city">City of your college/university</label>
+                    <input type="text" id="college-city" required>
+
+                    <label for="year">year From - to</label>
+                    <input type="text" placeholder="ex- 2022 - 2026" id="college-year">
+                    
+                    
+                    <button type="button" class="add-education">Add More Education</button>
+                </div>
+
+                <!-- =======================  EXPERIENCE SECTION  =========================== -->
+
+                <div class="experience-section" id="experience-section">
+                    <h2>Experience</h2>
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" required>
+
+                    <label for="company-city">City of your company</label>
+                    <input type="text" id="company-city" required>
+
+                    <label for="year">year From - to</label>
+                    <input type="text" placeholder="ex- 2022 - 2026" id="company-year" required>
+
+                    <button type="button" class="add-experience">Add More Experience</button>
+                </div>
+
+            </div>
+            
+            
+        </form>
+        <div class="btn">
+            <button type="submit" class="generate-btn">GENERATE RESUME</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
